@@ -38,11 +38,13 @@ public class QueueTest {
     }
 
     @Test
-    public void enqueue() {
-        Queue x = new Queue(5);
+    public void wide() {
+        Queue x = new Queue(3);
         x.enqueue(10);
         x.enqueue(15);
         x.enqueue(12);
+        x.enqueue(16);
+        assertEquals(x.size(), 6);
         
     }
 }
