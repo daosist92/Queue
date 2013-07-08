@@ -13,7 +13,7 @@ public class Queue<Type> {
     private Object[] array;
     private int front;
     private int rear;
-    private int items;
+    private static int items;
     private int size;
 
     public Queue(int size) {
@@ -40,7 +40,7 @@ public class Queue<Type> {
         return items == size;
     }
 
-    void enqueue(Type item) {
+    public void enqueue(Type item) {
         //
         if (isFull()) {
             wide_array();
