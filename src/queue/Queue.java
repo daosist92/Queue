@@ -41,6 +41,7 @@ public class Queue<Type> {
     }
 
     void enqueue(Type item) {
+        //
         if (isFull()) {
             wide_array();
         }
